@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.contorller.homeController">
+   <top>
+      <HBox alignment="CENTER" spacing="40.0" style="-fx-background-color: darkred;" BorderPane.alignment="CENTER_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <ButtonBar fx:id="buttonBar" nodeOrientation="RIGHT_TO_LEFT" style="-fx-background-color: darkred;">
+              <buttons>
+                <Button fx:id="changeProductButton" mnemonicParsing="false" prefHeight="26.0" style="-fx-background-color: white;" text="Change Password" textFill="#791212">
+                     <font>
+                        <Font name="Forte" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="saleRecordButton" layoutX="495.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Sale Records" textFill="#791212">
+                     <font>
+                        <Font name="Forte" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="uncompletedOrdersbutton" alignment="CENTER" layoutX="472.0" layoutY="17.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: white;" text="Uncompleted orders" textFill="#791212">
+                     <font>
+                        <Font name="Forte" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewProductsButton" layoutX="502.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: white;" text="View Products" textFill="#791212">
+                     <font>
+                        <Font name="Forte" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="invoiceRecordButton" layoutX="488.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Inventory Record" textFill="#791212">
+                     <font>
+                        <Font name="Forte" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="saleInvoiceButton" layoutX="507.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Sale invoice" textFill="#791212">
+                     <font>
+                        <Font name="Forte" size="14.0" />
+                     </font>
+                  </Button>
+              </buttons>
+            </ButtonBar>
+            <Button fx:id="logOutButton" alignment="CENTER" mnemonicParsing="false" style="-fx-background-color: white;" text="LogOut" textFill="#8d2626">
+               <font>
+                  <Font name="Forte" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <Label text="PIZZA HUT" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Forte" size="49.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4555555555555556" centerY="0.6142857142857143" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5899999737739563" green="0.3244999945163727" blue="0.3244999945163727" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.12027491408934708">
+                     <color>
+                        <Color red="0.5899999737739563" green="0.3244999945163727" blue="0.3244999945163727" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.29118773946360144">
+                     <color>
+                        <Color red="0.5526315569877625" green="0.08954678475856781" blue="0.08954678475856781" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4879725085910653">
+                     <color>
+                        <Color red="0.5921052694320679" green="0.32072368264198303" blue="0.32072368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.18518517911434174" blue="0.18518517911434174" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </center>
+</BorderPane>

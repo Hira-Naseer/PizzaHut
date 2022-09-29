@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane fx:id="flowPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="872.0" style="-fx-background-color: Darkred;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.contorller.unCompletedOrdersController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="450.0" prefWidth="599.0" spacing="20.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="32.0" prefWidth="514.0" style="-fx-background-color: white;" text="UnComplete Orders" textFill="#902323" underline="true">
+               <font>
+                  <Font name="Forte" size="29.0" />
+               </font>
+            </Label>
+            <TableView fx:id="unCompletedOrderTable" prefHeight="331.0" prefWidth="599.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Order No" />
+                <TableColumn prefWidth="100.0" text="Product Code" />
+                  <TableColumn prefWidth="94.0" text="Product Neme" />
+                  <TableColumn prefWidth="94.0" text="Quantity" />
+                  <TableColumn prefWidth="118.0" text="Price" />
+                  <TableColumn prefWidth="117.0" text="Date" />
+              </columns>
+            </TableView>
+            <Button fx:id="completedButton" mnemonicParsing="false" style="-fx-background-color: white;" text="Completed" textFill="#862727">
+               <font>
+                  <Font name="Forte" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

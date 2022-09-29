@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane style="-fx-background-color: Darkred;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="1.0" spacing="40.0" style="-fx-background-color: DARKRED;">
+               <children>
+                  <Label alignment="TOP_CENTER" text="PIZZA HUT" textFill="WHITE">
+                     <font>
+                        <Font name="Forte" size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="65.0" />
+                     </padding>
+                  </Label>
+                  <TableView fx:id="productNameTable" prefHeight="401.0" prefWidth="248.0">
+                    <columns>
+                      <TableColumn fx:id="productsNameColumn" prefWidth="247.0" text="PRODUCTS NAME" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="deleteProductButton" mnemonicParsing="false" prefHeight="20.0" prefWidth="139.0" style="-fx-background-color: white;" text="DELETE PRODUCT" textFill="#901515">
+                     <font>
+                        <Font name="Forte" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="40.0" top="40.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <VBox alignment="TOP_CENTER" spacing="25.0" style="-fx-background-color: darkred;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox style="-fx-background-color: white;">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="627.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="346.0" style="-fx-background-color: white;" text="SALE INVOICE" textFill="#9e1717" underline="true">
+                           <font>
+                              <Font name="Forte" size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox style="-fx-background-color: white;">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="58.0" prefWidth="617.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="116.0" style="-fx-background-color: white;" text="Product Name: " textFill="#b21a1a">
+                           <font>
+                              <Font name="Forte" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="productNameTextFeild" opacity="0.96" style="-fx-background-color: white;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <effect>
+                              <InnerShadow choke="0.05" height="23.96" radius="10.74">
+                                 <color>
+                                    <Color red="0.6700000166893005" green="0.0803999975323677" blue="0.0803999975323677" opacity="0.791304349899292" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="E_RESIZE" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Forte" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="617.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="116.0" style="-fx-background-color: white;" text="Quantity:" textFill="#b21a1a">
+                           <font>
+                              <Font name="Forte" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="quantityTextField" opacity="0.96" style="-fx-background-color: white;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <effect>
+                              <InnerShadow choke="0.05" height="23.96" radius="10.74">
+                                 <color>
+                                    <Color red="0.6700000166893005" green="0.0803999975323677" blue="0.0803999975323677" opacity="0.791304349899292" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="E_RESIZE" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Forte" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="addButton" mnemonicParsing="false" style="-fx-background-color: white;" text="ADD" textFill="#7c0909">
+                           <HBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Forte" size="14.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.6973684430122375" green="0.11299951374530792" blue="0.11299951374530792" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <TableView fx:id="saleInvoiceTable" style="-fx-background-color: white;">
+              <columns>
+                <TableColumn fx:id="catagoryColumn" prefWidth="122.0" text="Catagory" />
+                <TableColumn fx:id="productNameColumn" prefWidth="113.0" text="Product Name" />
+                  <TableColumn fx:id="quantityColumn" prefWidth="113.0" text="Quantity" />
+                  <TableColumn fx:id="unitPriceColumn" prefWidth="123.0" text="Unit price" />
+                  <TableColumn fx:id="totalPriceColumn" prefWidth="154.0" text="Total price" />
+              </columns>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TableView>
+            <ButtonBar nodeOrientation="RIGHT_TO_LEFT">
+              <buttons>
+                <Button fx:id="cancleButton" mnemonicParsing="false" prefHeight="22.0" prefWidth="99.0" style="-fx-background-color: white;" text="Cancle" textFill="#750b0b">
+                     <font>
+                        <Font name="Forte" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updateButton" layoutX="319.0" layoutY="19.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="99.0" style="-fx-background-color: white;" text="Update" textFill="#750b0b">
+                     <font>
+                        <Font name="Forte" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="saveButton" layoutX="319.0" layoutY="19.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="99.0" style="-fx-background-color: white;" text="Save" textFill="#750b0b">
+                     <font>
+                        <Font name="Forte" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteOrderRowButton" layoutX="319.0" layoutY="19.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="109.0" style="-fx-background-color: white;" text="Delete Order Row" textFill="#750b0b">
+                     <font>
+                        <Font name="Forte" size="10.0" />
+                     </font>
+                  </Button>
+              </buttons>
+               <VBox.margin>
+                  <Insets left="150.0" top="5.0" />
+               </VBox.margin>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <Pane style="-fx-background-color: Darkred;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="100.0" />
+         </padding>
+         <children>
+            <VBox alignment="CENTER" layoutY="3.0" prefHeight="556.0" prefWidth="306.0" spacing="20.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="272.0" style="-fx-background-color: white;" text="Bill" textFill="#941212" underline="true">
+                     <font>
+                        <Font name="Forte" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="100.0" />
+                     </padding>
+                  </Label>
+                  <HBox style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-background-color: White;" text="Extra Amount:" textFill="#8a0f0f">
+                           <font>
+                              <Font name="Forte" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="extraAmountTextFeild" style="-fx-background-color: white;">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.5921052694320679" green="0.12609648704528809" blue="0.12609648704528809" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="29.0" right="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="15.0" layoutY="47.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-background-color: White;" text="Discount:" textFill="#8a0f0f">
+                           <font>
+                              <Font name="Forte" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="45.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="discountTextFeild" style="-fx-background-color: white;">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.5921052694320679" green="0.12609648704528809" blue="0.12609648704528809" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="27.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="70.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-background-color: White;" text="Net Amount:" textFill="#8a0f0f">
+                           <font>
+                              <Font name="Forte" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="13.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="netAmountTextFeild" style="-fx-background-color: white;">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.5921052694320679" green="0.12609648704528809" blue="0.12609648704528809" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="93.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-background-color: White;" text="Payment:" textFill="#8a0f0f">
+                           <font>
+                              <Font name="Forte" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="paymentTextFeild" style="-fx-background-color: white;">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.5921052694320679" green="0.12609648704528809" blue="0.12609648704528809" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="72.0" right="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="116.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-background-color: White;" text="Total Amount:" textFill="#8a0f0f">
+                           <font>
+                              <Font name="Forte" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="totalAmountTextFeild" style="-fx-background-color: white;">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.5921052694320679" green="0.12609648704528809" blue="0.12609648704528809" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="29.0" right="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="139.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-background-color: White;" text="CustomerAmount:" textFill="#8a0f0f">
+                           <font>
+                              <Font name="Forte" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="customerAmountTextFeild" style="-fx-background-color: white;">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.5921052694320679" green="0.12609648704528809" blue="0.12609648704528809" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="162.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-background-color: White;" text="Transaction:" textFill="#8a0f0f">
+                           <font>
+                              <Font name="Forte" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="transactionTextFeild" style="-fx-background-color: white;">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.5921052694320679" green="0.12609648704528809" blue="0.12609648704528809" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="50.0" right="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="185.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-background-color: White;" text="Select Table:" textFill="#8a0f0f">
+                           <font>
+                              <Font name="Forte" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="selectTableTextFeild" style="-fx-background-color: white;">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.5921052694320679" green="0.12609648704528809" blue="0.12609648704528809" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="45.0" right="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <ButtonBar nodeOrientation="RIGHT_TO_LEFT">
+                     <buttons>
+                        <Button fx:id="newBillButton" mnemonicParsing="false" style="-fx-background-color: White;" text="New Bill" textFill="#9a2121">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.6842105388641357" green="0.08869395405054092" blue="0.08869395405054092" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="voidBillButton" layoutX="231.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: White;" text="Void Bill" textFill="#9a2121">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.6710526347160339" green="0.10562865436077118" blue="0.10562865436077118" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="holdBillButton" layoutX="231.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: White;" text="Hold Bill" textFill="#9a2121">
+                           <font>
+                              <Font name="Forte" size="13.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.6578947305679321" green="0.08528265357017517" blue="0.08528265357017517" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                     </buttons>
+                     <VBox.margin>
+                        <Insets left="25.0" top="30.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="7.0" left="5.0" right="5.0" />
+                     </padding>
+                  </ButtonBar>
+               </children>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </right>
+</BorderPane>

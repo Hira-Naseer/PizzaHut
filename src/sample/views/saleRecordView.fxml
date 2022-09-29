@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="saleRecordPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="1199.0" style="-fx-border-color: white; -fx-background-color: darkred;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.contorller.saleRecordController">
+   <children>
+      <Label layoutX="544.0" layoutY="14.0" text="Sale Records" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Forte" size="29.0" />
+         </font>
+      </Label>
+      <TableView fx:id="saleRecordTable" layoutX="409.0" layoutY="205.0" style="-fx-border-color: Darkred;">
+        <columns>
+          <TableColumn prefWidth="75.0" text="OrderNo" />
+          <TableColumn prefWidth="86.0" text="ProductCode" />
+            <TableColumn prefWidth="96.0" text="Product Name" />
+            <TableColumn prefWidth="81.0" text="Quantity" />
+            <TableColumn prefWidth="75.0" text="Price" />
+            <TableColumn prefWidth="75.0" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="444.0" layoutY="61.0" text="Select Start date:" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startingdateDatePicker" layoutX="708.0" layoutY="56.0">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6842105388641357" green="0.07919103652238846" blue="0.07919103652238846" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </DatePicker>
+      <Label layoutX="429.0" layoutY="110.0" text="Select Ending date:" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="endingdateDatePicker" layoutX="708.0" layoutY="105.0">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6842105388641357" green="0.07919103652238846" blue="0.07919103652238846" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </DatePicker>
+      <Button fx:id="viewSaleRecordButton" layoutX="562.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-color: white;" text="View Sale Recorde" textFill="#901d1d">
+         <font>
+            <Font name="Forte" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="481.0" layoutY="618.0" text="Total Orders Price:  " textFill="WHITE">
+         <font>
+            <Font name="Forte" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalpriceTextFeild" alignment="CENTER" layoutX="634.0" layoutY="614.0" style="-fx-background-color: darkred;" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</Pane>

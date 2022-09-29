@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane fx:id="splitPane" dividerPositions="0.5070224719101124" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.contorller.FrontViewController">
+   <items>
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="358.0" style="-fx-background-color: #77616E;">
+         <children>
+            <ImageView fitHeight="460.0" fitWidth="772.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pizza.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <VBox alignment="TOP_CENTER" prefHeight="424.0" prefWidth="685.0" StackPane.alignment="CENTER">
+               <children>
+                  <Label alignment="BASELINE_LEFT" prefHeight="291.0" prefWidth="343.0" text="PIZZA HUT" textAlignment="CENTER">
+                     <font>
+                        <Font name="Cooper Black" size="57.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5166666666666666" centerY="0.5095238095238095" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9342105388641357" green="0.9125852584838867" blue="0.9125852584838867" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.21455938697318">
+                                 <color>
+                                    <Color red="0.8947368264198303" green="0.049707602709531784" blue="0.049707602709531784" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.2574949638582766">
+                                 <color>
+                                    <Color red="0.8684210777282715" green="0.21710526943206787" blue="0.21710526943206787" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.44061302681992337">
+                                 <color>
+                                    <Color red="0.46000000834465027" green="0.03680000081658363" blue="0.03680000081658363" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.5747126436781607">
+                                 <color>
+                                    <Color red="0.10526315867900848" green="0.003411306068301201" blue="0.003411306068301201" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9770114942528734">
+                                 <color>
+                                    <Color red="0.9473684430122375" green="0.030701754614710808" blue="0.030701754614710808" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.7105262875556946" green="0.2861842215061188" blue="0.2861842215061188" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+      <FlowPane alignment="CENTER" prefHeight="467.0" prefWidth="364.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="459.0" prefWidth="348.0" spacing="40.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label alignment="CENTER" text="USER NAME" textFill="#831313">
+                           <font>
+                              <Font name="Forte" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="userNameTextFeild" alignment="CENTER" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: white;">
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                           <effect>
+                              <InnerShadow choke="0.4" radius="7.035" width="9.14">
+                                 <color>
+                                    <Color red="0.5789473652839661" green="0.024122806265950203" blue="0.024122806265950203" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <font>
+                              <Font name="Forte" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="192.0" spacing="20.0">
+                     <children>
+                        <Label alignment="CENTER" text="PASSWORD" textFill="#831313">
+                           <font>
+                              <Font name="Forte" size="24.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="passwordFeild" alignment="CENTER" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: white;">
+                           <effect>
+                              <InnerShadow choke="0.02" height="16.56" radius="8.149999999999999" width="18.04">
+                                 <color>
+                                    <Color red="0.4736842215061188" green="0.035087719559669495" blue="0.035087719559669495" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Button fx:id="loginButton" defaultButton="true" mnemonicParsing="false" prefHeight="28.0" prefWidth="87.0" text="LOGIN" textFill="#940808">
+                           <font>
+                              <Font name="Forte" size="19.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="resetButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="87.0" text="RESET" textFill="#940808">
+                           <font>
+                              <Font name="Forte" size="19.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </FlowPane>
+   </items>
+</SplitPane>

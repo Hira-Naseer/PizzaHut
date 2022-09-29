@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="ViewProductPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="858.0" style="-fx-background-color: darkred;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.contorller.viewProductsController">
+   <children>
+      <TableView fx:id="tableView" layoutX="191.0" layoutY="92.0" prefHeight="368.0" prefWidth="517.0">
+         <columns>
+            <TableColumn prefWidth="201.0" text="product" />
+            <TableColumn prefWidth="162.0" text="Quantity" />
+            <TableColumn prefWidth="152.0" text="Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="359.0" layoutY="33.0" text="ViewProducts" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="editbutton" layoutX="423.0" layoutY="499.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Edit" textFill="#a10a0a">
+         <font>
+            <Font name="Forte" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="574.0" layoutY="499.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Delete" textFill="#a10a0a">
+         <font>
+            <Font name="Forte" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="addButton" layoutX="296.0" layoutY="499.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Add" textFill="#a10a0a">
+         <font>
+            <Font name="Forte" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
